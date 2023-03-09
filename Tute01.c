@@ -21,3 +21,20 @@ int main(){
 	
 	return 0;
 }
+#include <stdio.h>
+int main() {
+
+  int distance, amount;
+
+  printf("Enter distance :");
+  scanf("%d",&distance);
+
+  if (distance >= 30) {
+    amount = distance * 30;
+  } else {
+    amount = 30*distance + (distance- 30) * 40 ;
+  }
+  printf("Full payment : %.2d",amount);
+
+  return 0;
+}
